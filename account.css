@@ -1,0 +1,73 @@
+.account-form{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.account-form-container{
+    /* overflow: hidden; */
+    position: relative;
+    /* box-shadow:0 0 10px 15px rgba(255, 252, 252, 0.815); */
+    width: 270px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius:5px;
+    background-color: var(--white);
+}
+.account-form-container.d-flex-colum{
+    gap: 25px;
+}
+.account-form-container span{
+    display: inline-block;
+    color: var(--dark);
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.form-top{
+    display: inline-block;
+    text-align: center;
+}
+/* .active_button{
+    border-bottom:2px solid;
+} */
+
+.account-form-container form{
+    padding: 0 20px;
+}
+form input{
+    padding: 7px;
+    width: 100% !important;
+    border: 1px solid #ccc;
+}
+
+/* .wrapper{
+    display: flex;
+} */
+/* .form_item{
+    min-width: 100%
+} */
+/* .right_slide{
+    transform: translateX(-100%);
+    transition: all .3s;
+}
+.left_slide{
+    transform: translateX(0%);
+    transition: all .3s;
+} */
+
+#login-form{
+    position: absolute;
+    left:-250px;
+}
+#register-form{
+    left: 0;
+}
+
+#indicator{
+    width: 80px;
+    background-color: #ff523b;
+    height: 3px;
+    margin-top: 1px;
+    transform: translateX(130px);
+    transition:all 1s linear;
+}
