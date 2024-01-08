@@ -4,12 +4,12 @@
     justify-content: flex-end;
 }
 .account-form-container{
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
-    /* box-shadow:0 0 10px 15px rgba(255, 252, 252, 0.815); */
-    width: 270px;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    /* box-shadow:0 0 20px 0px rgba(0, 0, 0, 0.1); */
+    width: 320px;
+    padding-top: 30px;
+    padding-bottom: 35px;
     border-radius:5px;
     background-color: var(--white);
 }
@@ -55,12 +55,16 @@ form input{
     transition: all .3s;
 } */
 
+#login-form,#register-form{
+    width: 100%;
+    transition: .6s;
+}
 #login-form{
+    transform: translateX(-310px);
     position: absolute;
-    left:-250px;
 }
 #register-form{
-    left: 0;
+    transform: translateX(0px);
 }
 
 #indicator{
@@ -68,6 +72,20 @@ form input{
     background-color: #ff523b;
     height: 3px;
     margin-top: 1px;
-    transform: translateX(130px);
-    transition:all 1s linear;
+    transform: translateX(80px);
+    transition:all .5s linear;
+}
+
+
+@media (max-width:991px){
+    .account-content-area.d-flex-between{
+        flex-direction: column;
+    }
+    .account-form{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .account-form-container{
+        margin: 0 auto;
+    }
 }

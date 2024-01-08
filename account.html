@@ -61,8 +61,8 @@
                     <div class="account-form">
                         <div class="account-form-container d-flex-colum">
                             <div class="form-top">
-                                <span class="change_button active_button">Login</span>
-                                <span class="change_button">Register</span>
+                                <span id="login-header-btn" class="change_button active_button">Login</span>
+                                <span id="register-header-btn" class="change_button">Register</span>
                                 <hr id="indicator">
                             </div>
                             
@@ -153,5 +153,26 @@
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
+    
+    <script>
+        let loginForm = document.getElementById('login-form')
+        let registerForm = document.getElementById('register-form')
+        let indicator = document.getElementById('indicator')
+        let loginBtn = document.getElementById('login-header-btn')
+        let registerBtn = document.getElementById('register-header-btn')
+        
+        loginBtn.addEventListener('click',()=>{
+            loginForm.style.transform = "translateX(0px)"
+            registerForm.style.transform = "translateX(300px)"
+            indicator.style.transform = "translateX(75px)"
+        })
+        
+        registerBtn.addEventListener('click',()=>{
+            registerForm.style.transform = "translateX(0px)"
+            loginForm.style.transform = "translateX(-310px)"
+            indicator.style.transform = "translateX(152px)"
+        })
+        
+    </script>
 </body>
 </html>

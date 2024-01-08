@@ -262,9 +262,9 @@ header{
     height: 45px;
     width: 45px;
 }
-.active_link{
+/* .active_link{
     border-bottom: 2px solid red;
-}
+} */
 /* ===================   Header End Here   ===================== */
 
 
@@ -475,6 +475,8 @@ header{
 
 
 
+
+/* ===================  Client say Start Here  ======================= */
 .client-say-content-area .clients{
     flex-wrap: wrap;
 }
@@ -512,6 +514,80 @@ header{
     transition: .4s linear;
     transform: translateY(15px);
 }
+/* ===================  Client say Start Here  ======================= */
+
+
+
+
+/* ===================  Contact  Start Here  ======================= */
+.contact-content-area{
+    width: 100%;
+}
+.contact-content-area.d-flex-colum{
+    gap: 30px;
+}
+.contact-header{
+    width:100%;
+}
+.contact-header img{
+    width: 120px;
+    height: 120px;
+    
+}
+.contact-data{
+    /* box-shadow: 0 0 10px 0 rgba(0,0,0,0.05); */
+    border: 1px solid #f3f3f3;
+    padding: 25px;
+    width: 50%;
+}
+.contact-data-item .d-flex{
+    justify-content: unset;
+}
+.contact-data-item p{
+    font-size: 14.5px;
+    color: var(--dark);
+    padding-left: 60px;
+}
+.contact-data-item .extra-small-header{
+    font-size: 16px;
+    font-weight: 700;
+}
+.contact-data-item-header.d-flex-colum{
+    gap: 10px;
+}
+.contact-body.d-flex{
+    gap: 0;
+}
+.contact-data.d-flex-colum{
+    gap: 30px;
+}
+.contact-data-item i{
+    color: var(--red);
+    display: inline-block;
+    border: 1px solid #f3f3f3;
+    width: 40px;
+    padding: 9px;
+    text-align: center;
+}
+
+/* --- contact-form --- */
+.contact-form{
+    width: 50%;
+    padding: 25px;
+    /* border: 1px solid #f3f3f3; */
+    background-color: var(--white-10);
+}
+
+.contact-form input,.contact-form textarea{
+    border: 1px solid #f3f3f3;
+    padding: 8px;
+}
+.contact-form textarea{
+    height: 161px;
+    resize: none;
+    width: 100%;
+}
+/* ===================  Contact  End Here  ======================= */
 
 
 
@@ -700,6 +776,24 @@ footer{
     .big-offer-image,.big-offer-info{
         width: 100%;
     }
+    
+    
+    /* =========   Contact start here    ============*/
+    .contact-image img{
+        width: 110px;
+        height: 110px;
+    }
+    .contact-data,.contact-form{
+        width: 90%;
+    }
+    .contact-body.d-flex{
+        flex-direction: column;
+    }
+    
+    
+    .brands-items{
+        padding: 0 15px;
+    }
 }
 
 @media (max-width:480px){
@@ -708,6 +802,15 @@ footer{
     }
     .client{
         min-width: 320px;
+        width: 90%;
+    }
+    .brands-items{
+        padding: 0 15px;
+    }
+    .brands .d-flex{
+        gap: 1px;
+    }
+    .brands img{
         width: 90%;
     }
 }
