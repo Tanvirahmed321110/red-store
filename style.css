@@ -262,6 +262,23 @@ header{
     height: 45px;
     width: 45px;
 }
+.header-nav li a{
+    position: relative;
+}
+.header-nav li a::after{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--red);
+    width: 0%;
+    height: 2px;transition: .35s;
+}
+.header-nav li a:hover::after{
+    color: var(--red-10);
+    left:0;
+    width: 100%;
+}
 /* .active_link{
     border-bottom: 2px solid red;
 } */
