@@ -96,6 +96,9 @@
     .slider-data p{
         font-size: 14px;
     }
+    .slider-image{
+      width: 100%;
+     }
     .swiper-slide img {
         display: block;
         width: 100%;
