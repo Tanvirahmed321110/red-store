@@ -39,6 +39,9 @@
     border-right: 4px solid #FAE6C0;
     padding-right: 50px;
  }
+ .slider-image{
+  width: 50%;
+ }
   .swiper-slide img {
     display: block;
     width: 100%;
