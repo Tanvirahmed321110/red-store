@@ -318,6 +318,7 @@ header{
     position: relative;
     cursor: pointer;
     transition: .5s;
+    border: 1px solid transparent;
 }
 .catagoris-item img{
     object-fit: cover;
